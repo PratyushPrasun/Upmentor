@@ -30,7 +30,7 @@ export const GALLERY_IMAGES = [
     src: '/um3.jpeg',
     title: "Keynote: 'Don't Just Learn It. Build It.'",
     category: 'Campus Induction',
-    caption: 'AILA cohort induction in the auditorium, setting the culture of building real-world AI applications over rote learning.',
+    caption: 'Campus cohort induction in the auditorium, setting the culture of building real-world technology applications over rote learning.',
     alt: "Auditorium keynote presentation Don't Just Learn It. Build It."
   },
   {

@@ -45,7 +45,7 @@ export default function Credentials() {
   return (
     <div className="overflow-hidden">
       {/* 00 / EDITORIAL HERO HEADER */}
-      <section className="pt-16 pb-16 sm:pt-24 sm:pb-24 bg-[#F8FAFC] border-b border-slate-200/80 pattern-grid">
+      <section className="pt-24 pb-16 sm:pt-30 sm:pb-24 bg-[#F8FAFC] border-b border-slate-200/80 pattern-grid">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-[#0284C7] text-xs font-bold mb-6 shadow-xs">

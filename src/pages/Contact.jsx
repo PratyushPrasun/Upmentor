@@ -153,7 +153,7 @@ export default function Contact() {
   return (
     <div className="overflow-hidden">
       {/* Editorial Header */}
-      <section className="pt-16 pb-14 sm:pt-20 sm:pb-20 bg-[#F8FAFC] border-b border-slate-200/80 pattern-grid">
+      <section className="pt-24 pb-14 sm:pt-30 sm:pb-20 bg-[#F8FAFC] border-b border-slate-200/80 pattern-grid">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-[#0284C7] text-xs font-bold mb-4 shadow-xs">
@@ -295,7 +295,7 @@ export default function Contact() {
                             School Leadership Form
                           </span>
                           <h2 className="font-display font-bold text-2xl text-[#0B192C] mt-1">
-                            Partner Your School with AILA
+                            Partner Your School with UpMentor
                           </h2>
                           <p className="text-xs text-slate-500 mt-1">
                             Schedule a free leadership presentation or campus pilot cohort.
@@ -440,7 +440,7 @@ export default function Contact() {
                               <option value="Free demo session">Free Demo Session</option>
                               <option value="AI awareness workshop">AI Awareness Workshop for Teachers</option>
                               <option value="Pilot program">Pilot Program (1 Class Cohort)</option>
-                              <option value="Full AILA rollout">Full School AILA Rollout</option>
+                              <option value="Full rollout">Full Institutional Rollout</option>
                             </select>
                           </div>
 
@@ -527,7 +527,7 @@ export default function Contact() {
                             Future-Proof Your Child
                           </h2>
                           <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                            AILA is delivered directly through partner schools. Tell us about your child and school so we can facilitate institutional partnership or inform you of upcoming regional cohorts.
+                            UpMentor programs are delivered directly through partner schools. Tell us about your child and school so we can facilitate institutional partnership or inform you of upcoming regional cohorts.
                           </p>
                         </div>
 
@@ -665,7 +665,7 @@ export default function Contact() {
                             className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white outline-none focus:border-[#0284C7]"
                           >
                             <option value="Want it in my child’s school">I want UpMentor in my child’s school</option>
-                            <option value="Learn about AILA">Learn about the 24-session curriculum</option>
+                            <option value="Learn about curriculum">Learn about practical lab programs</option>
                             <option value="General query">General parent query</option>
                           </select>
                         </div>
@@ -726,12 +726,12 @@ export default function Contact() {
                 <h3 className="font-display font-bold text-xl text-[#0B192C]">
                   {audience === 'school'
                     ? 'Why schools schedule a demo before commitment'
-                    : 'AILA transforms college & career trajectories'}
+                    : 'UpMentor transforms college & career trajectories'}
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
                   {audience === 'school'
-                    ? 'Our demo is not a sales pitch. It is a live walkthrough of the 24-session workbook, rubric frameworks, and how your existing computer lab seamlessly powers student client sprints.'
-                    : 'High school is the most strategic time to build verifiable AI capability. Students create live portfolios, master ethical AI guidelines, and build tangible projects that university admissions value.'}
+                    ? 'Our demo is not a sales pitch. It is a live walkthrough of our curriculum, hardware kits, rubric frameworks, and how your existing computer lab seamlessly powers student projects.'
+                    : 'High school is the most strategic time to build verifiable technical capability. Students create live portfolios, master ethical guidelines, and build tangible projects that university admissions value.'}
                 </p>
               </div>
 

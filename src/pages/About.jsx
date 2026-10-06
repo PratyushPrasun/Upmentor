@@ -56,7 +56,7 @@ export default function About() {
   return (
     <div className="overflow-hidden">
       {/* Editorial Header */}
-      <section className="pt-16 pb-20 sm:pt-24 sm:pb-28 bg-[#F8FAFC] border-b border-slate-200/80 pattern-grid">
+      <section className="pt-24 pb-20 sm:pt-30 sm:pb-40 bg-[#F8FAFC] border-b border-slate-200/80 pattern-grid">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F0F9FF] border border-[#0284C7]/20 text-[#0284C7] text-xs font-bold mb-6">

@@ -2,142 +2,126 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { LOGO } from '../data/assets';
 import { COMPANY, NAV_LINKS } from '../data/content';
-import { Phone, MessageCircle, Mail, MapPin, ArrowUpRight, ShieldCheck } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, ArrowUpRight, ShieldCheck } from 'lucide-react';
 import { InstagramIcon } from './Icons';
+
+const OFFERINGS = [
+  { label: 'Automation Lab', dot: 'bg-[#0284C7]' },
+  { label: 'Drone — Scratch to Intermediate', dot: 'bg-[#D97706]' },
+  { label: 'AI Literacy', dot: 'bg-[#10B981]' },
+  { label: 'Cyber Security Awareness', dot: 'bg-[#8B5CF6]' },
+];
+
+const headingCls =
+  'font-display font-bold text-[11px] uppercase tracking-wider text-[#0B192C] mb-2.5';
 
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-slate-200 text-slate-600">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
-          {/* Brand Col */}
-          <div className="lg:col-span-4 space-y-4">
-            <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white p-1">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid grid-cols-2 lg:grid-cols-12 gap-x-6 gap-y-6">
+          {/* Brand */}
+          <div className="col-span-2 lg:col-span-4 space-y-2.5">
+            <Link to="/" className="flex items-center gap-2.5">
+              <div className="w-9 h-9 rounded-lg overflow-hidden shadow-sm border border-slate-200 bg-white p-1">
                 <img src={LOGO.src} alt={LOGO.alt} className="w-full h-full object-contain" />
               </div>
-              <div>
-                <span className="font-display font-extrabold text-xl text-[#0B192C] tracking-tight">
+              <div className="leading-tight">
+                <span className="font-display font-extrabold text-lg text-[#0B192C] tracking-tight">
                   Up<span className="text-[#0284C7]">Mentor</span>
                 </span>
-                <span className="block text-[10px] uppercase font-bold tracking-wider text-slate-400">
+                <span className="block text-[9px] uppercase font-bold tracking-wider text-slate-400">
                   Edutech Pvt. Ltd.
                 </span>
               </div>
             </Link>
 
-            <p className="font-display font-bold text-lg text-[#0B192C] tracking-tight">
+            <p className="font-display font-bold text-sm text-[#0B192C] tracking-tight">
               "{COMPANY.tagline}"
             </p>
 
-            <p className="text-sm text-slate-500 leading-relaxed">
+            <p className="text-xs text-slate-500 leading-relaxed">
               {COMPANY.descriptor} Turning schools into AI-ready institutions across Odisha, CBSE, ICSE, and State Boards.
             </p>
 
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-semibold">
-              <ShieldCheck className="w-4 h-4 text-emerald-600" />
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-800 border border-emerald-200 text-[11px] font-semibold">
+              <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
               <span>Verified School Partnership Model</span>
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="lg:col-span-2">
-            <h3 className="font-display font-bold text-xs uppercase tracking-wider text-[#0B192C] mb-4">
-              Navigation
-            </h3>
-            <ul className="space-y-2.5 text-sm">
+          {/* Navigation */}
+          <div className="col-span-1 lg:col-span-2">
+            <h3 className={headingCls}>Navigation</h3>
+            <ul className="space-y-1.5 text-xs">
               {NAV_LINKS.map((link) => (
                 <li key={link.path}>
-                  <Link
-                    to={link.path}
-                    className="text-slate-600 hover:text-[#0284C7] transition-colors inline-flex items-center gap-1"
-                  >
-                    <span>{link.name}</span>
+                  <Link to={link.path} className="text-slate-600 hover:text-[#0284C7] transition-colors">
+                    {link.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Program Framework */}
-          <div className="lg:col-span-3">
-            <h3 className="font-display font-bold text-xs uppercase tracking-wider text-[#0B192C] mb-4">
-              AILA Program
-            </h3>
-            <ul className="space-y-2.5 text-sm text-slate-600">
-              <li className="flex items-start gap-2">
-                <span className="font-mono text-xs text-[#0284C7] font-semibold mt-0.5">I</span>
-                <span>AI Cognition &amp; Context Engineering</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="font-mono text-xs text-[#0284C7] font-semibold mt-0.5">II</span>
-                <span>AI Production &amp; Real Client Sprint</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="font-mono text-xs text-[#0284C7] font-semibold mt-0.5">III</span>
-                <span>AI Identity &amp; Digital Portfolio</span>
-              </li>
-              <li className="pt-2 text-xs text-slate-500">
-                Boards: CBSE • ICSE • Odisha State Board
-              </li>
+          {/* Core Offerings */}
+          <div className="col-span-1 lg:col-span-3">
+            <h3 className={headingCls}>Core Offerings</h3>
+            <ul className="space-y-1.5 text-xs text-slate-600">
+              {OFFERINGS.map((o) => (
+                <li key={o.label} className="flex items-center gap-2">
+                  <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${o.dot}`} />
+                  <span>{o.label}</span>
+                </li>
+              ))}
+              <li className="pt-1 text-[11px] text-slate-500">Boards: CBSE • ICSE • State Board</li>
             </ul>
           </div>
 
-          {/* Direct Communication */}
-          <div className="lg:col-span-3">
-            <h3 className="font-display font-bold text-xs uppercase tracking-wider text-[#0B192C] mb-4">
-              Direct Contact
-            </h3>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <div className="text-xs text-slate-500 mb-0.5">Academic Inquiries:</div>
-                <div className="flex flex-col gap-1">
+          {/* Direct Contact */}
+          <div className="col-span-2 lg:col-span-3">
+            <h3 className={headingCls}>Direct Contact</h3>
+            <ul className="space-y-1.5 text-xs">
+              <li className="text-[11px] text-slate-500">Academic Inquiries:</li>
+              <li className="flex flex-wrap gap-x-4 gap-y-1">
+                {[0, 1].map((i) => (
                   <a
-                    href={`tel:${COMPANY.contact.rawPhones[0]}`}
-                    className="flex items-center gap-2 text-slate-700 hover:text-[#0284C7] font-medium"
+                    key={i}
+                    href={`tel:${COMPANY.contact.rawPhones[i]}`}
+                    className="flex items-center gap-1.5 text-slate-700 hover:text-[#0284C7] font-medium"
                   >
-                    <Phone className="w-3.5 h-3.5 text-[#0284C7]" />
-                    <span>{COMPANY.contact.phones[0]}</span>
+                    <Phone className="w-3 h-3 text-[#0284C7]" />
+                    <span>{COMPANY.contact.phones[i]}</span>
                   </a>
-                  <a
-                    href={`tel:${COMPANY.contact.rawPhones[1]}`}
-                    className="flex items-center gap-2 text-slate-700 hover:text-[#0284C7] font-medium"
-                  >
-                    <Phone className="w-3.5 h-3.5 text-[#0284C7]" />
-                    <span>{COMPANY.contact.phones[1]}</span>
-                  </a>
-                </div>
+                ))}
               </li>
-
-              <li className="pt-1">
+              <li>
                 <a
                   href={`https://wa.me/${COMPANY.contact.whatsappRaw}?text=${encodeURIComponent(
                     COMPANY.contact.whatsappDefaultMsg
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-emerald-700 hover:text-emerald-800 font-semibold"
+                  className="inline-flex items-center gap-1.5 text-emerald-700 hover:text-emerald-800 font-semibold"
                 >
-                  <MessageCircle className="w-4 h-4 text-emerald-600" />
+                  <MessageCircle className="w-3.5 h-3.5 text-emerald-600" />
                   <span>WhatsApp: {COMPANY.contact.whatsapp}</span>
-                  <ArrowUpRight className="w-3.5 h-3.5" />
+                  <ArrowUpRight className="w-3 h-3" />
                 </a>
               </li>
-
               <li>
                 <a
                   href={COMPANY.contact.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-slate-700 hover:text-pink-600 font-medium"
+                  className="inline-flex items-center gap-1.5 text-slate-700 hover:text-pink-600 font-medium"
                 >
-                  <InstagramIcon className="w-4 h-4 text-pink-500" />
+                  <InstagramIcon className="w-3.5 h-3.5 text-pink-500" />
                   <span>Instagram: {COMPANY.contact.instagram}</span>
                 </a>
               </li>
-
-              <li className="flex items-center gap-2 text-slate-500 text-xs pt-1">
-                <MapPin className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+              <li className="flex items-start gap-1.5 text-slate-500 text-[11px]">
+                <MapPin className="w-3 h-3 text-slate-400 shrink-0 mt-0.5" />
                 <span>{COMPANY.contact.address}</span>
               </li>
             </ul>
@@ -145,9 +129,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="mt-6 pt-4 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-slate-500">
           <p>© {COMPANY.copyrightYear} {COMPANY.name} All rights reserved.</p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
             <span>CBSE · ICSE · State Board Certified Framework</span>
             <span className="text-slate-300">•</span>
             <span>Response within 4 business hours</span>
