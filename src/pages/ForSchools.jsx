@@ -53,7 +53,7 @@ export default function ForSchools() {
   return (
     <div className="overflow-hidden">
       {/* Leadership Hero */}
-      <section className="pt-16 pb-20 sm:pt-24 sm:pb-28 bg-[#F8FAFC] border-b border-slate-200/80 pattern-grid">
+      <section className="pt-24 pb-20 sm:pt-30 sm:pb-28 bg-[#F8FAFC] border-b border-slate-200/80 pattern-grid">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-[#0284C7] text-xs font-bold mb-6 shadow-xs">
@@ -161,9 +161,9 @@ export default function ForSchools() {
           <Reveal delay={0.1}>
             <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 h-full">
               <Calendar className="w-8 h-8 text-[#0284C7] mb-4" />
-              <h4 className="font-display font-bold text-lg text-[#0B192C]">24 Sessions / 8 Weeks</h4>
+              <h4 className="font-display font-bold text-lg text-[#0B192C]">Flexible Timetable Format</h4>
               <p className="text-xs text-slate-600 mt-2 leading-relaxed">
-                Scheduled as 3 sessions/week or weekend lab blocks during computer/activity periods.
+                Scheduled during regular computer periods, activity periods, or dedicated weekend lab blocks.
               </p>
             </div>
           </Reveal>
@@ -345,7 +345,7 @@ export default function ForSchools() {
               Request a free demo session for your leadership team.
             </h2>
             <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-              We conduct a 45-minute on-campus or virtual masterclass showcasing the AILA workbook and live student prompt exercises.
+              We conduct a 45-minute on-campus or virtual masterclass showcasing our practical modules and live student exercises.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <Button

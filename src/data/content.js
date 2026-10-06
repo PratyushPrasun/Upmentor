@@ -14,7 +14,7 @@ export const COMPANY = {
     rawPhones: ['8480046645', '8260156717'],
     whatsapp: '+91 98275 17488',
     whatsappRaw: '919827517488',
-    whatsappDefaultMsg: "Hi UpMentor, I'd like to know more about AILA for our school.",
+    whatsappDefaultMsg: "Hi UpMentor, I'd like to know more about your programs for our school.",
     instagram: '@joinupmentor',
     instagramUrl: 'https://instagram.com/joinupmentor',
     email: 'partnerships@upmentor.in',
@@ -33,10 +33,10 @@ export const NAV_LINKS = [
 ];
 
 export const STATS = [
-  { label: 'Structured Sessions', value: 24, suffix: '', highlight: 'Hands-on curriculum' },
-  { label: 'Intensive Weeks', value: 8, suffix: ' Wks', highlight: 'Integrated in timetable' },
-  { label: 'Architectural Phases', value: 3, suffix: '', highlight: 'Cognition → Production → Identity' },
-  { label: 'Core Student Assets', value: 4, suffix: '', highlight: 'Portfolio, Capstone Brief, Resume, GitHub' }
+  { label: 'Core Programs', value: '4', suffix: ' Pathways', highlight: 'Automation, Drones, AI & Cyber' },
+  { label: 'Practical Rigour', value: '100', suffix: '%', highlight: 'Hardware & live environments' },
+  { label: 'Board Alignment', value: 'CBSE', suffix: ' / ICSE', highlight: 'Zero timetable disruption' },
+  { label: 'Demonstrated Proof', value: 'Live', suffix: ' Labs', highlight: 'Prototypes, flight logs & defense' }
 ];
 
 export const MARQUEE_ITEMS = [
@@ -54,17 +54,17 @@ export const POSITIONING_BENTO = [
   {
     numeral: '01',
     badge: 'Category Shift',
-    title: 'A New Category: AI Literacy Infrastructure',
-    description: 'Schools buy outcomes, not disposable courses. UpMentor does not sell standalone workshops or hobbyist coding kits. We install institutional AI literacy that aligns with academic rigor and future careers.',
+    title: 'A New Category: AI & Tech Infrastructure',
+    description: 'Schools buy outcomes, not disposable courses. UpMentor does not sell standalone workshops or hobbyist coding kits. We install institutional technology literacy that aligns with academic rigor and future careers.',
     tag: 'Institutional Partnership',
     gridSpan: 'md:col-span-8'
   },
   {
     numeral: '02',
-    badge: 'Curriculum Depth',
-    title: 'Structured 8-Week Rigour',
-    description: 'A 24-session academic progression. We move students from cognitive fundamentals to autonomous production sprints.',
-    tag: 'No Rote Coding',
+    badge: 'Applied Rigour',
+    title: 'Four Specialized Lab Pathways',
+    description: 'We move students from passive theory to active building across Automation, Drone Engineering, AI Literacy, and Cyber Security.',
+    tag: 'No Rote Theory',
     gridSpan: 'md:col-span-4'
   },
   {
@@ -77,56 +77,106 @@ export const POSITIONING_BENTO = [
   },
   {
     numeral: '04',
-    badge: 'Documented Outputs',
-    title: 'Four Tangible Student Deliverables',
-    description: 'Every student graduates with a live production portfolio, an industry-partner sprint capstone, an ATS-standard technical resume, and an authentic GitHub code presence.',
+    badge: 'Verifiable Outcomes',
+    title: 'Tangible Student Artifacts',
+    description: 'Every student builds verifiable proof: working automated hardware prototypes, flight-tested drones, evaluated prompt architectures, and cybersecurity defense audits.',
     tag: 'Demonstrated Capability',
     gridSpan: 'md:col-span-8'
   }
 ];
 
-export const AILA_PHASES = [
+export const CORE_OFFERINGS = [
   {
-    phase: 'Phase I',
-    title: 'AI Cognition',
-    duration: 'Sessions 01 – 08 • Weeks 1 to 3',
-    summary: 'Building high-order mental models. Moving students from passive consumers to systematic prompt architects and context engineers.',
-    curriculum: [
-      'Deconstructing Large Language Models & Deep Learning intuition',
-      'Cognitive Prompt Engineering: Zero-shot, Few-shot & Chain-of-Thought',
-      'Responsible AI: Hallucination detection, bias evaluation & data privacy',
-      'The Professional AI Stack: LLMs, embeddings, and research synthesis',
-      'Context Engineering: Multi-turn prompt chaining for complex reasoning'
+    id: 'automation-lab',
+    number: '01',
+    title: 'Automation Lab',
+    badge: 'Hardware & Robotics',
+    category: 'Robotics & Mechanisms',
+    tagline: 'Physical Computing, Actuators & Smart Systems',
+    shortDesc: 'Hands-on laboratory infrastructure where students design, wire, and program automated mechanisms, sensors, and microcontrollers to solve practical physical challenges.',
+    image: '/hero/real/stem-lab-robotics.jpg',
+    imageAlt: 'Students working with robotics and automation laboratory hardware',
+    accentColor: '#0284C7',
+    accentBg: '#F0F9FF',
+    accentBorder: 'border-sky-200',
+    tag: 'Physical Hardware',
+    iconType: 'bot',
+    highlights: [
+      'Microcontroller Logic (Arduino, ESP32) & Circuit Prototyping',
+      'Sensor Integration (Ultrasonic, IR, Environmental) & Feedback Loops',
+      'Actuators, Relays, Servo Motors & Driver Circuits',
+      'Physical Hardware Prototypes & Working Automation Models'
     ],
-    outcomeBadge: 'Outcome: Cognitive Proficiency & Prompt Fluency'
+    deliverable: 'Functional automated hardware prototype with circuit telemetry'
   },
   {
-    phase: 'Phase II',
-    title: 'AI Production',
-    duration: 'Sessions 09 – 16 • Weeks 4 to 6',
-    summary: 'Direct application to real academic and commercial problem statements across Science, Commerce, and Humanities streams.',
-    curriculum: [
-      'Discipline-Specific AI: Differential equation solvers, market research & textual analysis',
-      'Competitive Exam Intelligence: AI-assisted conceptual mastery for JEE, NEET & CUET',
-      'Real-world Client Sprint: Solving a live operational problem with an industry partner',
-      'Micro-Internship Simulation: Structured deliverables under industry timelines',
-      'Data synthesis, automated workflows, and prototype deployment'
+    id: 'drone-course',
+    number: '02',
+    title: 'Drone — Scratch to Intermediate Course',
+    badge: 'Aviation & Aerodynamics',
+    category: 'Aerial Systems & Flight',
+    tagline: 'Aerodynamics, Flight Controllers & Aerial Missions',
+    shortDesc: 'A comprehensive flight engineering track from foundational aerodynamics and airframe assembly to radio telemetry, ground stations, and autonomous flight missions.',
+    image: '/um1.jpeg',
+    imageAlt: 'Student showcasing custom aerial UAV and telemetry hardware',
+    accentColor: '#D97706',
+    accentBg: '#FFFBEB',
+    accentBorder: 'border-amber-200',
+    tag: 'Aviation Engineering',
+    iconType: 'drone',
+    highlights: [
+      'Aerodynamics & Airframe Physics (Multi-rotor & Fixed-wing UAVs)',
+      'Component Assembly, Soldering & Flight Controller Configuration',
+      'Telemetry Radio Links, Ground Control Software & Sensor Fusion',
+      'Autonomous Mission Piloting & On-Campus Field Safety Protocols'
     ],
-    outcomeBadge: 'Outcome: Live Project Sprint & Evaluated Capstone'
+    deliverable: 'Flight-tested drone platform with logged mission telemetry'
   },
   {
-    phase: 'Phase III',
-    title: 'AI Identity',
-    duration: 'Sessions 17 – 24 • Weeks 7 to 8',
-    summary: 'Translating technical mastery into professional distinction, university admissions readiness, and lifelong personal branding.',
-    curriculum: [
-      'Executive Personal Branding: Articulating AI literacy to university admission boards',
-      'Career Intelligence: Mapping AI-proof career trajectories across industries',
-      'Production Portfolio: Deploying public case studies on GitHub and custom domains',
-      'Technical Profile Optimization & Engineering Networking for high-schoolers',
-      'Capstone Presentation & Formal Technical Defense'
+    id: 'ai-literacy',
+    number: '03',
+    title: 'AI Literacy',
+    badge: 'Cognitive Computing & LLMs',
+    category: 'Intelligence & Architecture',
+    tagline: 'Prompt Architecture, Context Engineering & Ethics',
+    shortDesc: 'Moving students from passive consumers to systematic prompt architects. Covers model intuition, multi-turn context windows, hallucination auditing, and responsible AI governance.',
+    image: '/hero/real/student-teamwork-classroom.jpg',
+    imageAlt: 'Students collaborating on AI models and code in modern classroom',
+    accentColor: '#10B981',
+    accentBg: '#ECFDF5',
+    accentBorder: 'border-emerald-200',
+    tag: 'Cognitive Intelligence',
+    iconType: 'brain',
+    highlights: [
+      'Cognitive Prompt Engineering (Zero-shot, Few-shot & Chain-of-Thought)',
+      'Multi-Turn Context Architecture & Reasoning Guardrails',
+      'Responsible AI: Hallucination Auditing & Source Verification',
+      'Applied Academic & Real-World Problem-Solving Workflows'
     ],
-    outcomeBadge: 'Outcome: Public Portfolio & Technical Capstone Defense'
+    deliverable: 'Production prompt architecture notebook and verified project portfolio'
+  },
+  {
+    id: 'cyber-security',
+    number: '04',
+    title: 'Cyber Security Awareness',
+    badge: 'Digital Defense & Safety',
+    category: 'Defense & Threat Modeling',
+    tagline: 'Threat Modeling, Network Defense & Digital Hygiene',
+    shortDesc: 'Equipping students and school communities with defensive digital literacy—understanding network structures, spotting social engineering threats, protecting data, and ethical safety.',
+    image: '/hero/real/coding-terminal-workspace.jpg',
+    imageAlt: 'Secure terminal environment with code and network monitoring',
+    accentColor: '#8B5CF6',
+    accentBg: '#F5F3FF',
+    accentBorder: 'border-purple-200',
+    tag: 'Digital Resilience',
+    iconType: 'shield',
+    highlights: [
+      'Network Fundamentals & Communication Protocols',
+      'Social Engineering, Phishing & Identity Protection',
+      'Password Cryptography & Multi-Factor Security Best Practices',
+      'Data Privacy Laws, Digital Footprints & Institutional Cyber Hygiene'
+    ],
+    deliverable: 'Defensive digital hygiene audit and campus cybersecurity guideline'
   }
 ];
 
@@ -175,12 +225,12 @@ export const TESTIMONIALS = [
     author: "Principal",
     role: "ICSE Affiliated High School",
     location: "Cuttack, Odisha",
-    metric: "Phase I & II Completed"
+    metric: "Institutional Cohort Completed"
   },
   {
-    quote: "Our daughter built a real market intelligence tool during her 8 weeks. Seeing her articulate how prompt context works and explaining ethical AI safeguards to us was eye-opening. This is the preparation schools actually need.",
+    quote: "Our daughter built a real automated project in the lab. Seeing her articulate how hardware logic works and explaining technical problem-solving to us was eye-opening. This is the preparation schools actually need.",
     author: "Parent of Grade 11 Student",
-    role: "AILA Pilot Cohort",
+    role: "School Lab Cohort",
     location: "Sambalpur, Odisha",
     metric: "Capstone Defense Graduate"
   }
@@ -189,8 +239,8 @@ export const TESTIMONIALS = [
 export const VISION_ROADMAP = [
   {
     stage: '01',
-    title: 'School AI Literacy Accelerator (AILA)',
-    desc: 'The foundational 8-week program turning standard classrooms across Odisha into AI-literate innovation hubs.',
+    title: 'In-School Practical Technology Labs',
+    desc: 'Turnkey lab infrastructure covering Automation, Drones, AI Literacy, and Cyber Security across partner schools.',
     status: 'Active Deployment'
   },
   {
@@ -201,14 +251,14 @@ export const VISION_ROADMAP = [
   },
   {
     stage: '03',
-    title: 'National AI Olympiad for Schools',
-    desc: 'An annual problem-solving tournament testing critical thinking, model alignment, and prompt architecture across India.',
+    title: 'National AI & Robotics Olympiad for Schools',
+    desc: 'An annual problem-solving tournament testing critical thinking, autonomous flight, and system engineering across India.',
     status: 'Upcoming'
   },
   {
     stage: '04',
     title: 'Corporate AI Literacy & Research Initiatives',
-    desc: 'Bridging high-school talent with corporate R&D teams and university AI research laboratories.',
+    desc: 'Bridging high-school talent with corporate R&D teams and university technology research laboratories.',
     status: 'Roadmap'
   }
 ];
@@ -222,7 +272,7 @@ export const PARTNERSHIP_STEPS = [
   {
     step: '02',
     title: 'Awareness Demo Workshop',
-    desc: 'A live on-campus masterclass for students and teachers demonstrating the difference between coding and true AI cognition.'
+    desc: 'A live on-campus masterclass for students and teachers demonstrating the difference between rote theory and applied technology mastery.'
   },
   {
     step: '03',
@@ -231,13 +281,13 @@ export const PARTNERSHIP_STEPS = [
   },
   {
     step: '04',
-    title: 'Full AILA Institution Rollout',
-    desc: 'Institutional integration across grades 8 through 12, complete with printed workbooks, mentors, and lab management.'
+    title: 'Full Institutional Rollout',
+    desc: 'Campus-wide integration with structured equipment kits, mentors, and ongoing lab facilitation.'
   },
   {
     step: '05',
     title: 'Capstone Review & Exhibition',
-    desc: 'Final capstone exhibition, technical defense presentations, and handover of student engineering portfolios and client sprint briefs.'
+    desc: 'Final capstone exhibition, technical defense presentations, and handover of student engineering portfolios and project briefs.'
   }
 ];
 
@@ -248,11 +298,11 @@ export const SCHOOL_FAQS = [
   },
   {
     q: 'What hardware infrastructure is needed from the school?',
-    a: 'Any standard computer laboratory with reliable internet connectivity and modern browsers (Chrome/Firefox) is sufficient. No expensive GPUs or specialized servers are required, as modern cloud-based AI environments are utilized.'
+    a: 'Any standard computer laboratory with reliable internet connectivity and modern browsers (Chrome/Firefox) is sufficient. For Automation and Drone modules, UpMentor supplies the hardware toolchains and flight equipment.'
   },
   {
-    q: 'How does AILA fit into an already packed academic timetable?',
-    a: 'AILA is scheduled as 3 sessions per week (or weekend lab blocks) across 8 weeks. It can be slotted into regular computer periods, activity periods, or zero periods with zero disruption to core board exam subjects.'
+    q: 'How do UpMentor programs fit into an already packed academic timetable?',
+    a: 'Our programs are scheduled as regular lab periods, activity periods, or weekend modules with zero disruption to core board exam subjects.'
   },
   {
     q: 'How does UpMentor handle student data privacy and safety?',
@@ -372,10 +422,10 @@ void loop() {
     studentDeliverable: 'Publicly hosted project portfolio URL and ATS-compliant technical resume ready for university boards.',
     sampleCode: `# Student Capstone Architecture Spec
 ## Title: Autonomous Telemetry & Sensor Monitor
-- **Lead Author:** Secondary AILA Cohort Member
-- **Repository:** github.com/student-profile/aila-capstone
-- **Live Deployment:** aila-capstone.vercel.app
-- **Peer Review:** Passed Phase III Institutional Defense`
+- **Lead Author:** Student Cohort Member
+- **Repository:** github.com/student-profile/capstone-project
+- **Live Deployment:** student-capstone.vercel.app
+- **Peer Review:** Passed Institutional Technical Defense`
   }
 ];
 

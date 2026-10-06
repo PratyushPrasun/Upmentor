@@ -28,6 +28,10 @@
     font-family: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
     letter-spacing: -0.025em;
   }
+
+  .font-handwriting {
+    font-family: 'Caveat', cursive, sans-serif;
+  }
 }
 
 /* Custom subtle utilities */
